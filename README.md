@@ -56,6 +56,13 @@ You can also explicitly set the value of 'it' in the expression:
 >> 12.0
 ```
 Saved values can only be accessed for the given instance of the program.
+### Valid Characters/Operands
+Operands:
+```sh
+= * / + -
+```
+- Variable names can only contain upper/lowercase letters and underscores.
+- Numbers can be integers and decimals. 
 ## Invalid Inputs
 Any invalid input given to the program will have a pointer to the first error-causing character along with an error message printed to the console.
 ```sh
