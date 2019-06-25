@@ -71,3 +71,5 @@ Not enough operands:
 3 +
   ^
 ```
+# Running The Program
+This program does not require any additional libraries so it can be run straight from the command line or your preferred IDE.
