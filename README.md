@@ -35,12 +35,11 @@ will not be interpreted the same as
 ```sh
 >> 23 +
 ```
-
-## Valid Inputs
-```sh
-TODO
-```
 ## Invalid Inputs
+Any invalid input given to the program will have a pointer to the first error-causing character along with an error message printed to the console.
 ```sh
-TODO
+>> 3 +
+Note enough operands:
+3 +
+  ^
 ```
