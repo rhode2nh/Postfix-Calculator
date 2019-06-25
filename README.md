@@ -27,6 +27,14 @@ Whitespace in expressions is ignored. This means that you can have varying amoun
 >> 12.0
 >>
 ```
+The exception are numbers and letters. 
+```sh
+>> 2 3 +
+```
+will not be interpreted the same as
+```sh
+>> 23 +
+```
 
 ## Valid Inputs
 ```sh
