@@ -21,6 +21,12 @@ This means that you can break an expression up into multiple lines as such:
 >> 5
 >>
 ```
+Whitespace in expressions is ignored. This means that you can have varying amounts of whitespace (or none) in between characters. 
+```sh
+>> 4    5  3 ++      @
+>> 12.0
+>>
+```
 
 ## Valid Inputs
 ```sh
