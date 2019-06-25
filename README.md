@@ -41,6 +41,20 @@ You can set values to variables and use them in future expressions.
 >> 1 test - @
 >> 6.0 
 ```
+If a variable is not used in the given expression, the value is stored in a default variable named 'it'. You can access it at any point as such:
+```sh
+>> 7 4 * @
+>> 28.0
+>> it
+>> 28.0
+```
+You can also explicitly set the value of 'it' in the expression:
+```sh
+>> it = 5 4 3 + + @
+>> 12.0
+>> it
+>> 12.0
+```
 Saved values can only be accessed for the given instance of the program.
 ## Invalid Inputs
 Any invalid input given to the program will have a pointer to the first error-causing character along with an error message printed to the console.
