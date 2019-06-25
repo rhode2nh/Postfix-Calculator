@@ -8,9 +8,10 @@ This program will wait for user input to start calculating. Every expression/equ
 >> 8.0
 >>
 ```
-The '@' symbol denotes END OF FILE. If the user does not end the expression with an '@' symbol, the console will go to a new line and wait for more input.
+The '@' symbol denotes END OF FILE. If the user does not end the expression with an '@' symbol, the console will go to a new line and wait for the rest of the expression until there is an '@' symbol.
 ```sh
 >> 3 2 +
+>>
 ```
 This means that you can break an expression up into multiple lines as such:
 ```sh
@@ -26,18 +27,18 @@ Whitespace in expressions is ignored. This means that you can have varying amoun
 ```
 The exception are numbers and letters. 
 ```sh
->> 2 3 +
+>> 2 3 + @
 ```
 will not be interpreted the same as
 ```sh
->> 23 +
+>> 23 + @
 ```
 ### Variables
 You can set values to variables and use them in future expressions. 
 ```sh
->> test = 3 4 +
+>> test = 3 4 + @
 >> 7.0
->> 1 test -
+>> 1 test - @
 >> 6.0 
 ```
 Saved values can only be accessed for the given instance of the program.
