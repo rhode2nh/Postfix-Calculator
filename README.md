@@ -39,7 +39,7 @@ will not be interpreted the same as
 Any invalid input given to the program will have a pointer to the first error-causing character along with an error message printed to the console.
 ```sh
 >> 3 +
-Note enough operands:
+Not enough operands:
 3 +
   ^
 ```
